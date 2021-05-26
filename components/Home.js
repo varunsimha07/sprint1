@@ -16,7 +16,7 @@ function Home({navigation,route}) {
             <Button icon="camera" mode="contained" onPress={() => navigation.navigate('Challenge')}>
         Press me
         </Button>
-        {route.params ? <Text>{route.params.cname}</Text> : <Text>error</Text>}
+        
         {route.params ? console.log(route.params) : console.log("not found")}
         </View>
       </SafeAreaView>
